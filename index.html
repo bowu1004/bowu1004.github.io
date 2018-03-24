@@ -1,3 +1,95 @@
-my page at BW
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+<link href="http://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
 
-test on Feb 10
+<link rel="stylesheet" type="text/css" href="index_July06.css">
+<script type="text/javascript" src="./lib/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./lib/jquery.cycle2.min.js"></script>
+
+<html>
+    <title> B. W. </title> 
+    <link rel="icon" sizes="192x192" href="./img/main_page/tag_bee.png">
+    <div id="real_time_00" align=left;></div>  
+    <script> 
+        setInterval("document.getElementById('real_time_00').innerHTML = new Date().toLocaleString();", 1000);
+    </script>
+    
+    <head id="header">
+            <div id="logo" data-content-field="site-title">
+                <h1 class="logo"><font color="#FF6600">Bo Wu</font></h1><br>
+                <h2><font size=4px>Please visit:</font><a href="https://iuuubo.wixsite.com/mysite"><I>my e-Porfolio</I></a></h2>
+                <h2><font size=4px>Room 468</font></h2>
+                <h2><font size=4px>Dept. of Electrical and Computer Engineering</font></h2>
+                <h2><font size=4px>Auburn University</font></h2>
+                <h2><font size=4px>A.L., USA, 36830</font></h2><br>
+            </div>        
+
+          <div id="container" align=center>
+			<ul class="menu">
+				<li class="child-home">
+					Home
+				</li>
+				<li class="child-service">
+					Service
+				</li>
+				<li class="child-music" onclick='javascript:window.open("./aplayer_bowu/index.html")'>
+					Music
+				</li>
+                <li class="child-download" onclick='javascript:window.alert("Please download files from the ftp content part below.")'>
+					Download
+				</li>
+				<li class="child-contact" href=" " onclick='javascript:window.open("contact.html")' style="cursor:hand;" onMouseOver="this.style.background='#aacfe4'" onMouseOut="this.style.background=''">
+					Contact
+				</li>
+  
+                
+			</ul>
+		</div>
+    </head>
+    
+   <br><br><br><br> <hr />
+    
+    
+    <body>
+        
+        <div id="container_img_slide" align=center>
+			<div id="slideshow" class="cycle-slideshow"
+                 data-cycle-fx = "fade"
+                 data-cycle-speed = "600"
+                 data-cycle-timeout = "3000"
+                 data-cycle-pager = "#pager"
+                 data-cycle-pager-template = "<a herf='#'><img src='{{src}}' height=100 width=150/>"
+                 data-cycle-next = "#next"
+                 data-cycle-prev = "#prev"
+                 data-cycle-manual-fx = "scrollHorz"
+                 data-cycle-manual-speed = "400"
+                 data-cycle-pager-fx = "fade"
+                 >
+                
+				<img src="img/main_page/AU_eagle_1.jpg" alt="">
+				<img src="img/main_page/AU_eagle_2.jpg" alt="">
+				<img src="img/main_page/bee_character.png" alt="">
+				<img src="img/main_page/tag_bee.png" alt="">
+                <img src="img/main_page/vis_au.png" alt="">
+			</div>
+			<div id="pager"></div>
+			<img id="prev" src="./img/main_page/previous.png"  />
+			<img id="next" src="./img/main_page/next.png"  />
+		</div>
+    </body>
+</html>
+
+<!--
+<script type="text/javascript" src="index.js"></script> 
+-->
+<hr/>
+
+<table id="ftp-content">
+    <B><I>FTP Content</I></B>
+    <br>
+    &nbsp;&nbsp;&nbsp;*download test files(Matlab):<a href=" "><I>cal_Distance(disabled)</I></a><br>
+    &nbsp;&nbsp;&nbsp;*download Winscp software:<a href="./ftp_files/winscp577setup.exe"><I>Winscp</I></a><br>
+    &nbsp;&nbsp;&nbsp;*download Cyberduck software:<a href="./ftp_files/Cyberduck.app/"><I>Cyberduck</I></a>
+    <br>
+</table>

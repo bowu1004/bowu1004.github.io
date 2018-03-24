@@ -1,0 +1,70 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="index.css">
+<html>
+    <title>Welcome to Bo's web!</title> 
+    <link rel="icon" sizes="192x192" href="img/main_page/tag_bee.png">
+    <div id="real_time_00" align=left;></div>  
+    <script> 
+        setInterval("document.getElementById('real_time_00').innerHTML = new Date().toLocaleString();", 1000);
+    </script>
+    <header id="header">
+            <div id="logo" data-content-field="site-title">
+                <h1 class="logo"><font color="#FF6600">Bo Wu</font></h1><br>
+                <h2><font size=4px>Room 468</font></h2>
+                <h2><font size=4px>Dept. of Electrical and Computer Engineering</font></h2>
+                <h2><font size=4px>Auburn University</font></h2>
+                <h2><font size=4px>A.L., USA, 36830</font></h2><br>
+            </div>        
+
+        
+		  <div class="Nav">
+			<span id="links">
+				<a href="/" style="background-color:orange;height:30px" >Home</a>
+				- <a href="/" style="background-color:orange;height:30px">Research & Outreach Publications</a>
+				- <a href="/" style="background-color:orange;height:30px">Courses</a>
+                - <a href="./aplayer_bowu/index.html" style="background-color:orange;height:30px">Music</a>
+				- <a href=" " onclick='javascript:window.open("contact.html")' style="background-color:orange;height:30px">Contact</a>
+                - <input type="button" value="Download" onclick='javascript:window.alert("Please download files from the ftp content part below.")' style="background-color:white;height:17px">
+			</span>
+		  </div>
+
+    </header>
+    
+    <body>
+        <div id="photo-list">        
+            <ul id="scroll">                   
+                <a href="#" ><img src="img/main_page/bee_character.png" width="720px" height="380px" alt=""/></a></ul>    
+        </div>
+        <p id='demo_02'></p>
+        <script tpye="text/javacript">
+            //window.alert('Hello, dear friends!!');
+            //document.write('<h1><h1>');
+            //window.open("test.html")
+            //<script tpye="text/javascript">
+              //  window.alert('This is a test!' );
+            if (confirm("Do you agree?")) { 
+                alert("Agreed!"); 
+                } else { 
+                alert("Disagreed!"); 
+                } 
+            
+            var result = prompt("What's your name?"," "); 
+            if (result !== null) { 
+                alert("Welcome, "+result); 
+            } 
+
+        </script>
+    </body>
+</html>
+<script type="text/javascript" src="index_March09.js"></script>
+<hr/>
+<table id="ftp-content">
+    <B><I>FTP Content</I></B>
+    <br>
+    &nbsp;&nbsp;&nbsp;*download test files(Matlab):<a href="./ftp_files/March23_TEST_calDis_2_center_DELETE.zip"><I>cal_Distance</I></a><br>
+    &nbsp;&nbsp;&nbsp;*download Winscp software:<a href="./ftp_files/winscp577setup.exe"><I>Winscp</I></a><br>
+    &nbsp;&nbsp;&nbsp;*download Cyberduck software:<a href="./ftp_files/Cyberduck.app/"><I>Cyberduck</I></a>
+    <br>
+</table>
